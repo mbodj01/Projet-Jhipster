@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>projet1</title>
+    <meta name="description" content="Description for projet1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <base href="/" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.webapp" />
+    <link rel="stylesheet" href="content/css/loading.css" />
+    <!-- jhipster-needle-add-resources-to-root - JHipster will add new resources here -->
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+     :root {
+        --primary: #476f80;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        overflow-x: hidden;
+        background: #fff;
+        min-height: 100vh;
+    }
+    
+    #header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    #header .logo {
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 2em;
+        text-decoration: none;
+    }
+    
+    #header ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #header ul li {
+        list-style: none;
+        margin-left: 20px;
+    }
+    
+    #header ul li a {
+        text-decoration: none;
+        padding: 6px 15px;
+        color: var(--primary);
+        border-radius: 20px;
+    }
+    
+    #header ul li a:hover,
+    #header ul li a.active {
+        background: var(--primary);
+        color: #fff;
+    }
+    
+    section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to top, var(--primary), transparent);
+        z-index: 10;
+    }
+    
+    section img {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+    }
+    
+    section #text {
+        position: absolute;
+        color: var(--primary);
+        font-size: 10vw;
+        text-align: center;
+        line-height: .55em;
+        font-family: 'Rancho', cursive;
+        transform: translatey(-50%);
+    }
+    
+    section #text span {
+        font-size: .20em;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+    
+    #btn {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 30px;
+        background: #fff;
+        color: var(--primary);
+        font-size: 1.2em;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border-radius: 40px;
+        transform: translatey(100px);
+    }
+    
+    .sec {
+        position: relative;
+        padding: 100px;
+        background: var(--primary);
+    }
+    
+    .sec h2 {
+        font-size: 3.5em;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    
+    .sec p {
+        font-size: 1em;
+        color: #fff;
+    }
+    
+    footer {
+        position: relative;
+        padding: 0px 100px;
+        background: var(--primary);
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: #fff;
+    }
+</style>
+
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">Reserve de BANDIA</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Pourquoi notre reserve?</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <Section>
+        <h2 id="text"><span>Il est temps de decouvrir la reserve la plus diversifiee du </span><br>Senegal</h2>
+
+        <img src="https://user-images.githubusercontent.com/65358991/170092504-132fa547-5ced-40e5-ab64-ded61518fac2.png" id="bird1">
+        <img src="https://user-images.githubusercontent.com/65358991/170092542-9747edcc-fb51-4e21-aaf5-a61119393618.png" id="bird2">
+        <img src="https://user-images.githubusercontent.com/65358991/170092559-883fe071-eb4f-4610-8c8b-a037d061c617.png" id="forest">
+
+        <a href="#" id="btn">Explore</a>
+
+        <img src="https://user-images.githubusercontent.com/65358991/170092605-eada6510-d556-45cc-b7fa-9e4d1d258d26.png" id="rocks">
+        <img src="https://user-images.githubusercontent.com/65358991/170092616-5a70c4af-2eed-496f-bde9-b5fcc7142a31.png" id="water">
+    </Section>
+
+    <div class="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Un safari inoubliable lors de votre séjour au Sénégal dans la réserve de Bandia où vous pourrez rencontrer tous les grands mammifères d’Afrique dans 3.500 ha de nature grandiose : baobabs géants, buissons épineux, lianes capricieuses….
+            <br><br> La réserve privée de Bandia constitue un petit joyau de réussite écologique par la régénération surprenante de sa flore et la réintroduction de grands mammifères d'Afrique, disparus parfois depuis des siècles, sous la pression démographique
+            et le braconnage. Elle se situe à 65 km de Dakar et à 15 km de Saly-Portudal (station balnéaire de la "petite côte") sur la route principale (N1) allant vers Mbour et la Casamance.
+            <br><br> Voici ce qu'en dit le guide Mondios : "A mi-chemin entre Thoiry et, en réduction, du Ngorongoro tanzanien ou du Masaï-Mara kényan, la réserve de Bandia, invite à d'agréables safaris photographiques. A la fois proche de la capitale
+            et des plages de Saly-Portudal, elle met la mythique faune africaine à la portée de tous". En effet, dans ses 3.500 ha, on surprend avec une pointe au coeur, les hordes de grandes antilopes et de gazelles dans un environnement grandiose de
+            baobabs géants, buissons épineux et lianes capricieuses.
+            <br><br> La plupart des animaux se laissent approcher (raisonnablement!) : les photographes sont à la fête ! vous serez autorisé à mettre pied à terre, y compris pour observer de près un rhinocéros caché par les taillis ; en revanche mieux
+            vaut rester dans le véhicule en présence d'autruches mâles (plumage noir et blanc) volontiers agressives surtout en période de rut.
+            <br><br> Un bar-restaurant domine le point d'eau où buffles pataugent jusqu'au museau et où les crocodiles jouent au tronc d'arbre, tandis que se chamaillent les singes.Le visiteur s'y déplace en voiture de tourisme ou en tout terrain (pouvant
+            être loués sur place) sous la conduite d'un guide sympathique qui n'a pas son pareil pour repérer un girafon, un nid de vautour ou un buffle solitaire. Si vous n'êtes pas motorisé, joignez-vous aux visites organisées par les grands hôtels
+            de Saly ou de Dakar.Outre les animaux et la nature, le visiteur peut également découvrir des pyramides sérères avec chambre mortuaire reconstituée, tombeau de griots au creux d'un baobab millénaire contenant d'authentiques ossements humains,
+            meule de charbonnier, cases peuls, etc... tout cela avec d'intéressantes explications, agrémentées de savoureuses anecdotes, par des guides compétents et souvent polyglottes.
+    </div>
+
+    <footer>
+        <a href="#" class="bi bi-twitter">Twitter</a> <a href="#">Instagram</a> <a href="#">Facebook</a> <a href="#">Snapchat</a>
+    </footer>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -.1 + '%';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * 2 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -.12 + 'px';
+            forest.style.top = value * .25 + 'px';
+            header.style.top = value * .5 + 'px';
+        })
+    </script>
+
+</body>
+
+</html>
